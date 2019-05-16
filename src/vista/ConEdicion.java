@@ -44,6 +44,10 @@ public class ConEdicion extends Main {
 			mostrarVentanaPrincipal(event);
 		}
 	}
+	
+	public void cancelar(ActionEvent event) {
+		mostrarVentanaPrincipal(event);
+	}
 
 	@FXML
 	public void initialize() {

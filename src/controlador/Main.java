@@ -10,6 +10,7 @@ import modelo.Persona;
 import vista.*;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 
 
@@ -31,6 +32,7 @@ public class Main extends Application {
 		try {
 			this.primaryStage = primaryStage;
 			this.primaryStage.setTitle("Agenda JavaFX");
+			this.primaryStage.getIcons().add(new Image("file:resources/images/icon_address.png"));
 			
 // Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
@@ -55,7 +57,7 @@ public class Main extends Application {
 			// Show the scene containing the root layout.
 			Scene scene = new Scene(rootLayout);
 			secondaryStage = new Stage();
-            
+            secondaryStage.getIcons().add(new Image("file:resources/images/icon_address.png"));
 			secondaryStage.setTitle("Editar Persona");
 			secondaryStage.setScene(scene);
 			secondaryStage.show();

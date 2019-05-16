@@ -5,8 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane minHeight="280.0" minWidth="280.0" prefHeight="300.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="vista.ConEdicion">
+<AnchorPane minHeight="280.0" minWidth="280.0" prefHeight="300.0" prefWidth="450.0" styleClass="background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ConEdicion">
    <children>
       <Label layoutX="43.0" layoutY="72.0" text="Nombre" />
       <Label layoutX="43.0" layoutY="184.0" text="Telefono" />
@@ -14,7 +13,7 @@
       <TextField fx:id="txtNombre" layoutX="141.0" layoutY="67.0" prefHeight="31.0" prefWidth="240.0" />
       <TextField fx:id="txtApellido" layoutX="141.0" layoutY="125.0" prefHeight="31.0" prefWidth="240.0" />
       <TextField fx:id="txtTelefono" layoutX="141.0" layoutY="179.0" prefHeight="31.0" prefWidth="240.0" />
-      <Button fx:id="btnCancelar" layoutX="304.0" layoutY="240.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="btnCancelar" layoutX="304.0" layoutY="240.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
       <Button fx:id="btnAceptar" layoutX="217.0" layoutY="240.0" mnemonicParsing="false" onAction="#guardar" text="Aceptar" />
    </children>
 </AnchorPane>
